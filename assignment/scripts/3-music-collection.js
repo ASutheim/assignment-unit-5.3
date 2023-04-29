@@ -41,3 +41,22 @@ function showCollection(array) {
 }
 
 showCollection(collection);
+
+/*the code above creates and tests the showCollection function*/
+
+function findByArtist(artist) {
+  let stuffByThisArtist = [];
+  for (i = 0; i < collection.length; i++) {
+    if (artist === collection[i].artist) {
+      stuffByThisArtist.push(collection[i]);
+    }
+  }
+  return stuffByThisArtist;
+}
+
+console.log(findByArtist("Lizzo"));
+console.log(findByArtist("Picasso"));
+
+/*The code above creates a function findByArtist, which
+searches the collection for albums by a certain artist and returns
+matching results as an array stuffByThisArtist.*/
